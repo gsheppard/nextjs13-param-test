@@ -14,8 +14,10 @@ const CollectionPage = ({ title }: Props) => {
     <div className="text-center py-12">
       <div className="text-4xl py-2">Product Category Page</div>
       <div className="text-4xl py-2">{title}</div>
-      <div className="text-xl py-2">{router.asPath}</div>
-      <div className="text-xl py-2">{router.query.collectionSlug}</div>
+      <div className="text-xl py-2">asPath: {router.asPath}</div>
+      <div className="text-xl py-2">
+        collectionSlug: {router.query.collectionSlug}
+      </div>
     </div>
   );
 };

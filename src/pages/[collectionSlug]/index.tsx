@@ -1,20 +1,20 @@
 import React from "react";
 import { GetStaticPropsContext, NextPage } from "next";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 interface Props {
   title: string;
 }
 
 const CollectionPage = ({ title }: Props) => {
-  // const router = useRouter();
+  const router = useRouter();
 
   return (
-    <div className="text-center py-12 text-6xl">
-      <div>Product Category Page</div>
-      <div>{title}</div>
-      {/* <div>{router.asPath}</div>
-      <div>{router.query.collectionSlug}</div> */}
+    <div className="text-center py-12">
+      <div className="text-4xl py-2">Product Category Page</div>
+      <div className="text-4xl py-2">{title}</div>
+      <div className="text-xl py-2">{router.asPath}</div>
+      <div className="text-xl py-2">{router.query.collectionSlug}</div>
     </div>
   );
 };

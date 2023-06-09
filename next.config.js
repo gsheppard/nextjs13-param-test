@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
-  basePath: '/categories',
+  basePath: '/collections',
   reactStrictMode: true,
 }
 

@@ -8,6 +8,7 @@ interface Props {
 
 const CollectionPage = ({ title }: Props) => {
   const router = useRouter();
+  console.log(router); // eslint-disable-line no-console
 
   return (
     <div className="text-center py-12">
